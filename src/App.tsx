@@ -1,52 +1,41 @@
-import React, { FunctionComponent, useState, useEffect, useMemo } from "react";
-import axios from "axios";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import styled from "styled-components";
+import Header from "./components/Header";
+import DatabasesPage from "./pages/databases";
+import DatabaseDetailsPage from "./pages/database-details";
 
 interface IProps {}
 
-type status = "WORKING" | "NOT WORKING" | "LOADING";
-
-const statusInfo = {
-    WORKING: {
-        statusMessage: "Fake server is working",
-        statusColor: "green",
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <DatabasesPage />,
     },
-    "NOT WORKING": {
-        statusMessage: "Fake server is not working",
-        statusColor: "red",
+    {
+        path: "/databases",
+        element: <DatabasesPage />,
     },
-    LOADING: {
-        statusMessage: "Loading...",
-        statusColor: "yellow",
+    {
+        path: "/databases/:id",
+        element: <DatabaseDetailsPage />,
     },
-};
+]);
 
-const App: FunctionComponent<IProps> = () => {
-    const [serverStatus, setServerStatus] = useState<status>("LOADING");
-
-    const { statusMessage, statusColor } = useMemo(
-        () => statusInfo[serverStatus],
-        [serverStatus]
-    );
-
-    useEffect(() => {
-        const fakeServerUrl = "http://localhost:4000/databases";
-
-        axios
-            .get(fakeServerUrl)
-            .then((response) => {
-                setServerStatus("WORKING");
-                console.log(response.data);
-            })
-            .catch(() => {
-                setServerStatus("NOT WORKING");
-            });
-    }, []);
-
+const App: React.FC<IProps> = () => {
     return (
         <div>
-            <h5 style={{ color: statusColor }}>{statusMessage}</h5>
+            <Header />
+            <Container>
+                <RouterProvider router={router} />
+            </Container>
         </div>
     );
 };
+
+const Container = styled.main`
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1rem;
+`;
 
 export default App;

@@ -14,13 +14,16 @@
         "json-server": "^1.0.0-beta.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "react-router-dom": "^6.23.1",
         "react-scripts": "5.0.1",
+        "styled-components": "^6.1.11",
         "typescript": "^4.9.5",
         "web-vitals": "^2.1.4"
     },
     "scripts": {
         "start": "react-scripts start",
-        "fake-server": "json-server --watch ./fake-server/db.json --port 4000"
+        "fake-server": "json-server --watch ./fake-server/db.json --port 4000",
+        "test": "npx cypress run"
     },
     "eslintConfig": {
         "extends": [
@@ -39,5 +42,8 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "cypress": "^13.9.0"
     }
 }

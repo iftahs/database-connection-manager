@@ -1,28 +1,116 @@
 {
-    "databases": [
-        {
-            "id": 1,
-            "name": "Database 1",
-            "url": "https://db1.example.com",
-            "username": "user1",
-            "password": "password1",
-            "type": "Snowflake"
-        },
-        {
-            "id": 2,
-            "name": "Database 2",
-            "url": "https://db2.example.com",
-            "username": "user2",
-            "password": "password2",
-            "type": "Trino"
-        },
-        {
-            "id": 3,
-            "name": "Database 3",
-            "url": "https://db3.example.com",
-            "username": "user3",
-            "password": "password3",
-            "type": "MySQL"
-        }
-    ]
+  "databases": [
+    {
+      "id": "1",
+      "name": "Database 1",
+      "url": "https://db1.example.com",
+      "username": "user1111",
+      "password": "password1",
+      "type": "Snowflake"
+    },
+    {
+      "id": "2",
+      "name": "Database 2",
+      "url": "https://db2.example.com",
+      "username": "user2",
+      "password": "password2",
+      "type": "Trino"
+    },
+    {
+      "id": "3",
+      "name": "Database 3",
+      "url": "https://db3.example.com",
+      "username": "user3",
+      "password": "password3",
+      "type": "MySQL"
+    },
+    {
+      "id": 1716042478576,
+      "name": "Iftah Saar",
+      "type": "Snowflake",
+      "url": "https://db-example.example.com",
+      "username": "Iftah Saar",
+      "password": "12345"
+    },
+    {
+      "id": 1716043109941,
+      "name": "Iftah Saar",
+      "type": "dfbdfb",
+      "url": "https://scontent.ftlv5-1.fna.fbcdn.net/v/t39.30808-6/429665265_7875884379091474_1971688806460902053_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c42490&_nc_ohc=FtG7pEFwLr8AX9DP1aB&_nc_ht=scontent.ftlv5-1.fna&oh=00_AfAlXEzpRY7yfVIRf4WzzILZfNQ0EP72rKSnD835oXDNhg&oe=65DF245F",
+      "username": "Iftah Saar",
+      "password": "12345"
+    },
+    {
+      "id": 1716044044056,
+      "name": "Test database",
+      "type": "test",
+      "url": "test",
+      "username": "test",
+      "password": "test"
+    },
+    {
+      "id": 1716044052285,
+      "name": "Test database",
+      "type": "test",
+      "url": "test",
+      "username": "test",
+      "password": "test"
+    },
+    {
+      "id": 1716044396828,
+      "name": "Test database",
+      "type": "test",
+      "url": "test",
+      "username": "test",
+      "password": "test"
+    },
+    {
+      "id": 1716044447258,
+      "name": "Test database",
+      "type": "test",
+      "url": "test",
+      "username": "test",
+      "password": "test"
+    },
+    {
+      "id": 1716044466086,
+      "name": "Test database",
+      "type": "test",
+      "url": "test",
+      "username": "test",
+      "password": "test"
+    },
+    {
+      "id": 1716044658147,
+      "name": "Test database",
+      "type": "test",
+      "url": "test",
+      "username": "test",
+      "password": "test"
+    },
+    {
+      "id": 1716044689297,
+      "name": "Test database",
+      "type": "test",
+      "url": "test",
+      "username": "test",
+      "password": "test"
+    },
+    {
+      "id": 1716044732897,
+      "name": "Test database",
+      "type": "test",
+      "url": "test",
+      "username": "test",
+      "password": "test"
+    },
+    {
+      "id": 1716044802056,
+      "name": "Test database",
+      "type": "test",
+      "url": "test",
+      "username": "test",
+      "password": "test"
+    }
+  ]
 }
